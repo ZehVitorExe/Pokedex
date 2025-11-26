@@ -1,0 +1,163 @@
+body{
+    background-color: grey;
+}
+
+#pokedex-view{
+    width: 600px;
+    height: 900px;
+    background-color: red;
+    border: solid;
+    border-width: 7px;
+    border-radius: 30px;
+    border-right-style: double;
+    border-right-width: 10px;
+}
+
+#select-button{
+    margin-left: 40px;
+    width: 150px;
+}
+
+#mountGroup-view{
+    width: 40vw;
+    height: 80vh;
+    background-color: #ab1111;
+    margin-right: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 10px;
+    border-style: ridge;
+    border-color: #3f1119;
+}
+
+.mountGroup-card{
+    width: 100%;
+    height: 110px;
+    margin: 10px;
+    margin-right: 10px;
+    background-color: #0040b1;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 30px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: solid;
+    border-color: #25a0ff;
+    border-style: outset;
+    border-width: 6px;
+    font-family: monospace;
+    color: snow;
+    font-size: x-large;
+}
+
+.mountGroup-card .poke-description{
+    width: 100%;
+}
+
+.body-view{
+    display: flex;
+}
+
+.footer{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.footer .circle{
+    height: 80px;
+    border: solid;
+    width: 80px;
+    background-color: #000000;
+    border: solid 20px #1c1b1b;
+}
+
+.view{
+  width: 600px;
+    height: 100px;
+    background-color: red;
+    border: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    padding-top: 10px;
+    display: flex;
+    border-radius: 40px;
+    padding-bottom: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: #aaa;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: solid 30px;
+    border-style: ridge;
+}
+
+.dots {
+    display: flex;
+    margin-left: 5px;
+}
+
+.dots span {
+    width: 40px;
+    height: 40px;
+    background: #777;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.door{
+        width: 550px;
+    height: 590px;
+    background-color: red;
+    border: solid;
+    border-width: 4px;
+    border-bottom-width: 10px;
+    margin-left: 40px;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation: abrir 1.1s ease-out forwards;
+    position: fixed;
+    border-radius: 30px 10px 10px 30px;
+    border-right: double 10px;
+}
+
+.windown{
+    border-radius: 40px;
+    margin-top: 10%;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(213, 214, 214);
+    border: solid;
+    border-width: 10px;
+    border-bottom-width: 6px;
+    margin-left: auto;
+    border-bottom-left-radius: 130px;
+    border-bottom-style: double;
+    border-right-width: 10px;
+    border-right-style: double;
+}
+
+.windown-view{
+    border-radius: 20px;
+    border: solid;
+    margin-top: 20%;
+    margin: auto;
+    margin-top: 15%;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+}
+
+@keyframes abrir {
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(-1); }
+}
+
+
