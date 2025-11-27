@@ -145,7 +145,7 @@ body{
 }
 
 .windown-view{
-    border-radius: 20px;
+        border-radius: 20px;
     border: solid;
     margin-top: 20%;
     margin: auto;
@@ -153,6 +153,30 @@ body{
     background-color: white;
     width: 400px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.windown-view button{
+    width: 60%;
+    height: 40px;
+    background-color: bisque;
+    border: solid;
+    border-width: initial;
+    color: darkblue;
+    border-radius: 10px;
+}
+
+button a{
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    font-family: monospace;
+    color: brown;
 }
 
 @keyframes abrir {
