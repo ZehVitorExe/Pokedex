@@ -28,6 +28,10 @@ Equip.prototype.getPosition = function (){
     return this.position;
 }
 
+Equip.prototype.setPosition = function (position){
+    this.position = position
+}
+
 Equip.prototype.getEquip = function (){
     return this.composition;
 }
@@ -36,7 +40,7 @@ Equip.prototype.generateCard = function (pokemon){
     
     return `<div class="mountGroup-card">         
             <div class="poke-description">
-                <img src="${pokemon.img}" alt="Girl in a jacket" width="80" height="80">
+                <img src="${pokemon.img}" alt="${pokemon.nome}_img" width="80" height="80">
                 <span>${pokemon.nome}</span>
                 <span>${pokemon.getTypes()}</span>
             </div>

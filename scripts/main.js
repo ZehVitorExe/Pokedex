@@ -25,7 +25,7 @@ document.pokedexPage=0
 async function loadPokedex(page){
     document.querySelector(".pokedex-view").innerHTML=""
     //document.pokedexPage = page
-    const list = await request(apiBaseInfo.getPokedexPage(15))
+    const list = await request(apiBaseInfo.getPokedexPage(20))
     .then(result => result.json())
     .then(json => json.results)
 
@@ -42,12 +42,12 @@ async function loadPokedex(page){
 }
 
 function updatePokedexPage(mode){
-    if (mode == 0 && document.pokedexPage>=14){
+    if (mode == 0 && document.pokedexPage>=19){
         loadPokedex(document.pokedexPage)
-        document.pokedexPage -= 15
+        document.pokedexPage -= 20
     }else if (mode == 1){
         loadPokedex(document.pokedexPage)
-        document.pokedexPage += 15
+        document.pokedexPage += 20
     }
     
 }
@@ -116,6 +116,22 @@ window.initMountGroupPage = function(){
 
     document.querySelector("#select-button")
         .addEventListener("click", () => {equip.putPokemon(equip.getPosition()); updatePokeViewList(equip);});
+
+    document.querySelector(".exit-btn")
+        .addEventListener("click", () => {window.location.href = "index.html"});
+
+     document.querySelector(".search-btn")
+        .addEventListener("click", () => { 
+            let search = parseInt(document.querySelector("#search-input").value)
+            console.log(search)
+
+            if(search > 0){
+                equip.setPosition(search)
+
+                updatePokeView(equip); 
+            }
+            
+        });
 
     console.log(equip.getEquip())
 }

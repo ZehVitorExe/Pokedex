@@ -12,7 +12,7 @@ Pokemon.prototype.updateImg = (img)=> {
 
 Pokemon.prototype.getCardPoke = function() {
     return `<div class="poke-card"> 
-                <img src="${this.img}" alt="Girl in a jacket" width="100" height="100">
+                <img src="${this.img}" alt="${this.nome}_img" width="100" height="100">
                 <div class="poke-card-description">
                     <h3>${this.nome}</h3>
                     <h4>${this.getTypes()}</h4>
