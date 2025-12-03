@@ -18,6 +18,24 @@ body{
     width: 150px;
 }
 
+#arrow-button{
+    display: flex;
+    margin: 20px;
+    width: 30%;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#arrow-button div{
+    height: 70px;
+    border: solid;
+    width: 70px;
+    background-color: #000000;
+    border: solid 10px #1c1b1b;
+}
+
 #mountGroup-view{
     width: 40vw;
     height: 80vh;
@@ -56,6 +74,14 @@ body{
 
 .mountGroup-card .poke-description{
     width: 100%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mountGroup-card .poke-description img{
+    background-color: #1c1b1b;
 }
 
 .body-view{
@@ -65,6 +91,10 @@ body{
 .footer{
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer .circle{
@@ -169,6 +199,19 @@ body{
     border-width: initial;
     color: darkblue;
     border-radius: 10px;
+}
+
+.windown-view div {
+    background-color: #ededed;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 60px;
 }
 
 button a{

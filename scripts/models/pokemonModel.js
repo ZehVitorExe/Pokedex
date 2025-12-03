@@ -1,10 +1,10 @@
 export function Pokemon (pokemon) {
-    console.log(pokemon.sprites.front_default)
+
     this.nome = pokemon.name,
     this.img = pokemon.sprites.front_default,
     this.types = pokemon.types,
     this.color = pokemon.color
-}
+
 
 Pokemon.prototype.updateImg = (img)=> {
     this.img = img;
@@ -26,4 +26,5 @@ Pokemon.prototype.getTypes = function(){
         typeString += `<span>${i.type.name}</span>`
     }
     return typeString;
+}
 }
