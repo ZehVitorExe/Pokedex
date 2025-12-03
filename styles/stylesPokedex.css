@@ -33,6 +33,34 @@ body{
     width: 150px;
 }
 
+#search-box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-box #search-input {
+    background-color: rgb(85, 80, 80);
+    width: 50px;
+    color: white;
+}
+
+#search-box .search-btn{
+    background-color: green;
+    margin: 10px;
+    height: 15px;
+    width: 40px;
+}
+
+#search-box .exit-btn{
+    background-color: rgb(151, 39, 5);
+    margin: 10px;
+    height: 15px;
+    width: 40px;
+}
+
 #arrow-button{
     display: flex;
     margin: 20px;

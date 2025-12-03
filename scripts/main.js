@@ -41,13 +41,16 @@ async function loadPokedex(page){
     }
 }
 
-function updatePokedexPage(mode){
+function updatePokedexPage(mode, page = 0){
     if (mode == 0 && document.pokedexPage>=19){
         loadPokedex(document.pokedexPage)
         document.pokedexPage -= 20
     }else if (mode == 1){
         loadPokedex(document.pokedexPage)
         document.pokedexPage += 20
+    }else if (mode == 2){
+        document.pokedexPage = page * 20;
+        loadPokedex(document.pokedexPage)
     }
     
 }
@@ -71,12 +74,23 @@ window.initPokedexPage = function (){
 
     document.querySelector("#select-button")
         .addEventListener("click", () => {document.location.pathname = "/index.html"});
+    
+    document.querySelector(".search-btn")
+        .addEventListener("click", () => { 
+            let search = parseInt(document.querySelector("#search-input").value)
+            console.log(search)
+
+            if(search > 0){
+                updatePokedexPage(2, search);
+            }
+            
+        });
 
     loadPokedex(document.pokedexPage)
 }
 
 window.initPokedexIndex = function(){
-
+    
     generateMenu();
 }
 
